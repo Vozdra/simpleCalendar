@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.mainDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .6);
+  margin: 0 10%;
+  padding: 3%;
+}
+.oneMonth {
+  margin: 10px 7px;
+}
+.monthName {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, .3);
+  color: #fff;
+  padding: 1px 0 3px 0;
+}
+.trDayWeek {
+  font-size: 15px;
+}
+.thDayWeek {
+  color: #000;
+  font-weight: 900;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+  padding: 4px;
+}
+.trDay .thDay {
+  font-size: 15px;
+}
+.prevMonth, .nextMonth {
+  opacity: .3;
+}
+td {
+  color: #fff;
+}
+.yearDisplay {
+  display: inline-block;
+  margin: 0 10%;
+}
+.yearDisplay h1 {
+  background-color: rgba(255, 255, 255, .4);
+  padding: 10px 25px;
+  float: left;
+  margin-right: 5%;
+}
+#inputYearEnter, .yearDisplay button {
+  width: 400px;
+  height: 35px;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 25px;
+  margin: 25px 0;
+  border: none;
+}
+#inputYearEnter {
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 0;
+  padding: 20px;
+}
+.yearDisplay button {
+  margin-top: 3px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+  transition: all .1s ease;
+}
+.yearDisplay button:hover {
+  cursor: pointer;
+  background-color: #181818;
+  transition: all .1s ease;
+}
+
+@media screen and (max-width: 576px) {
+  .yearDisplay h1 {
+   width: 100%;
+   text-align: center;
+  }
+  #inputYearEnter, .yearDisplay button {
+    display: block;
+    width: 280px;
+    font-size: 16px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .yearDisplay button {
+    margin-bottom: 25px;
+    font-size: 10px;
+  }
+ }
